@@ -1,14 +1,56 @@
+/* GENERAL */
 body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
   color: #2c3e50;
-  background-color: #7472ca;
+  background-color: #fdfdfd;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+header.hero {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 header.hero h1 {
-  color: #17cea9; /* ανοιχτό πράσινο */
+  color: #1abc9c;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 header.hero h2 {
-  color: #60c2a1;
+  color: #34495e;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+header.hero p {
+  font-size: 1.1rem;
+}
+
+/* HEADINGS */
+h3 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  margin-top: 40px;
+}
+
+/* SKILLS */
+section.skills ul {
+  list-style: none;
+  padding: 0;
 }
 
 section.skills ul li {
@@ -19,53 +61,37 @@ section.skills ul li {
   margin: 5px 5px 5px 0;
 }
 
-
-h3 {
-  border-bottom: 2px solid #424040;
-  padding-bottom: 5px;
-}
-
-a {
-  color: #1f425a;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 5px;
-}s
-
+/* PROJECTS */
 section.projects ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   padding: 0;
+  list-style: none;
 }
 
 section.projects ul li {
-  background-color: #f8f9fa;  /* ανοιχτό γκρι */
+  background-color: #f8f9fa;
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 8px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 
 section.projects ul li:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-  border-color: #3498db;  /* γαλάζιο highlight */
+  border-color: #3498db;
 }
 
 section.projects ul li a {
   font-weight: bold;
   display: block;
   margin-bottom: 5px;
+}
+
+/* CONTACT */
+section.contact p {
+  margin-top: 10px;
+  font-size: 1rem;
 }
